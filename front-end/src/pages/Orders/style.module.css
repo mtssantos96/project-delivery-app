@@ -1,0 +1,12 @@
+.cardsContainer {
+  align-items: center;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}

@@ -1,0 +1,23 @@
+.containerProducts {
+  background-color: #212121;
+  color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.containerHeader > div {
+  bottom: 1rem;
+  position: fixed;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+}

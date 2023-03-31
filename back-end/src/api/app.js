@@ -1,7 +1,16 @@
 const express = require('express');
+const cors = require('cors');
+const routers = require('../routes/router');
 
 const app = express();
+app.use(cors());
 
-app.get('/coffee', (_req, res) => res.status(418).end());
+app.use(express.json());
+
+app.use(routers);
+
+app.use(express.static('public', {
+  immutable: true,
+}));
 
 module.exports = app;
