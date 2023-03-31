@@ -1,0 +1,74 @@
+.cardContainer {
+  align-items: stretch;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  display: flex;
+  font-weight: 600;
+  height: 6rem;
+  margin: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cardContainer:hover {
+  box-shadow: 1px 6px 6px 2px rgba(0, 0, 0, 0.3) , 0 -6px 10px 0 rgba(255, 255, 255, 0.1);
+  filter: brightness(1.1);
+  transition: -webkit-box-shadow 0.5s ease-in-out , border 0.1s ease-in-out;
+}
+
+.orders {
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.status {
+  align-items: stretch;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 7rem;
+}
+
+.cardContainer [ class *= 'Pendente' ] {
+  background-color: rgb(231, 170, 65);
+}
+
+.cardContainer [ class *= 'Preparando' ] {
+  background-color: rgb(242, 236, 55);
+}
+
+.cardContainer [ class *= 'Em Trânsito' ] {
+  background-color: rgb(152, 226, 49);
+}
+
+.cardContainer [ class *= 'Entregue' ] {
+  background-color: rgb(21, 193, 41);
+}
+
+.datePrice {
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+
+.cardContainer [ data-testid *= 'address' ] {
+  border-width: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

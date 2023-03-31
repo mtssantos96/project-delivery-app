@@ -1,0 +1,47 @@
+.containerNavbar {
+  align-items: stretch;
+  background-color: #212121;
+  box-shadow: #0000003a 0 20px 25px -5px , #0000008a 0 10px 10px -5px;
+  color: #f2f2f2;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.containerNavbar > * {
+  height: 100%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.containerNavbar :not( button ) {
+  text-align: center;
+  width: 100%;
+}
+
+.containerNavbar button {
+  background: linear-gradient(hsl(15, 100%, 65%) 0%, hsl(15, 100%, 45%) 100%);
+  border: 0;
+  cursor: pointer;
+  padding: 0 1rem;
+  white-space: nowrap;
+}
+
+.containerNavbar button:hover {
+  color: #f2f2f2;
+  filter: brightness(1.3);
+  transition: filter 0.2s ease-in-out , color 0.2s ease-in-out;
+}
+
+.containerNavbar button:not( [ class = 'selected' ] ) {
+  background: linear-gradient(hsl(15, 100%, 45%) 0%, hsl(15, 100%, 35%) 100%);
+}
+
+.containerNavbar .logoutButton button {
+  background: linear-gradient(hsl(15, 100%, 65%) 0%, hsl(15, 100%, 45%) 100%);
+  border: 0;
+  cursor: pointer;
+  padding: 0 1rem;
+  white-space: nowrap;
+}
+
